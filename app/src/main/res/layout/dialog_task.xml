@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="250dp"
+    android:layout_height="wrap_content"
+    android:background="@color/todo_background_todo_app"
+    android:orientation="vertical"
+    android:padding="16dp"
+    >
+
+    <EditText
+        android:id="@+id/etTask"
+        style="@style/Plannertext"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/white"
+        android:hint="@string/Add_Task"
+        android:textColorHint="@color/todo_subtitle_text" />
+
+    <RadioGroup
+        android:id="@+id/rgCategories"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RadioButton
+            android:id="@+id/rbBusiness"
+            style="@style/rbStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:buttonTint="@color/todo_business_category"
+            android:checked="true"
+            android:text="@string/Business" />
+
+        <RadioButton
+            android:id="@+id/rbPersonal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            style="@style/rbStyle"
+            android:buttonTint="@color/todo_personal_category"
+            android:text="@string/Personal"/>
+
+        <RadioButton
+            android:id="@+id/rbOther"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            style="@style/rbStyle"
+            android:buttonTint="@color/todo_other_category"
+            android:text="@string/Other"/>
+
+        <RadioButton
+            android:id="@+id/rbSport"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            style="@style/rbStyle"
+            android:buttonTint="@color/todo_Sport_category"
+            android:text="@string/Sport"/>
+
+        <RadioButton
+            android:id="@+id/rbOcio"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            style="@style/rbStyle"
+            android:buttonTint="@color/todo_Ocio_category"
+            android:text="@string/Ocio"/>
+
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/btnPlus"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/todo_accent"
+        android:text="@string/Add_Task"
+        android:layout_margin="12dp"/>
+</LinearLayout>
